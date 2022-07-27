@@ -14,6 +14,8 @@ var db = mysql.createConnection({
     database: 'Ecommerce'
 });
 
+//getting page not getting endpoint
+
 app.listen(process.env.PORT || port, () =>{
     console.log('Connected to port 3001')
 })
