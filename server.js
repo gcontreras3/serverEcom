@@ -14,7 +14,7 @@ var db = mysql.createConnection({
     database: 'Ecommerce'
 });
 
-app.get('https://ecomv.herokuapp.com/Products', (req, res) =>{
+app.get('https://ecomv.herokuapp.com', (req, res) =>{
     
     db.query('SELECT * FROM Products', (err, result) => {
         if (err){
@@ -27,7 +27,7 @@ app.get('https://ecomv.herokuapp.com/Products', (req, res) =>{
 
 
 })
-app.get('https://ecomv.herokuapp.com/Products', (req, res) => {
+app.get('https://ecomv.herokuapp.com', (req, res) => {
     db.query("SELECT * FROM Products", (err, result) => {
         if (err){
             console.log(err)
